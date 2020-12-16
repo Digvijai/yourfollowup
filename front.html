@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+
+    <title>opening page</title>
+</head>
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-shadow: 2px 6px 6px white;
+        margin: auto;
+        text-align: center;
+        margin-top: 20%;
+        justify-content: center;
+        background-image: linear-gradient(57deg, #00c6a7, #1e4d92);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vh;
+        height: 60vh;
+        /* clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%); */
+        /* color: #67BC2A; */
+    }
+
+    .btn {
+        align-items: center;
+        font-size: 1.5rem;
+        border: 2px solid black;
+        background-image: linear-gradient(57deg, #00c6a7, #1e4d92);
+        border-radius: 14px;
+        box-shadow: 4px 6px 6px black;
+    }
+
+    body #img {
+        height: 30%;
+        width: 30%;
+        border-radius: 50%;
+        margin-top: -78%;
+        animation: bounce 1s linear 1;
+    }
+    @keyframes bounce {
+        10%{
+            height: 30%;
+            width: 30%;
+        }
+        30%{
+            height: 30%;
+            width: 35%;
+        }
+        50%{
+            height: 15%;
+            width: 37%;
+            transform: translateY(-100%);
+            transform: translateY(100%);
+        }
+        75%{
+            height: 30%;
+            width: 35%;
+        }
+        100%{
+            transform: translateY(0%);
+        }
+
+    }
+    p{
+        font-size: larger;
+    }
+    .btn:hover {
+        background-image: linear-gradient(57deg, #1e4d92, #00c6a7);
+        /* color: white; */
+        cursor: pointer;
+    }
+    h1{
+        animation: type 4s steps(23);
+        overflow: hidden;
+        white-space: nowrap;
+        /* border-right: 2px solid black; */
+        /* width: 23ch; */
+    }
+
+    @keyframes type {
+        0%{
+            width: 0ch;
+        }
+        100%{
+            width: 23ch;
+        }
+    }
+    h2{
+        animation: type1 4s steps(34);
+        overflow: hidden;   
+        white-space: nowrap;
+       /* border-right: 2px solid black; */
+        /* width: 23ch; */
+    }
+    @keyframes type1 {
+        0%{
+            width: 0ch;
+        }
+        100%{
+            width: 34ch;
+        }
+    }
+    .shadow{
+        background-color: darkgray;
+        height: 18px;
+        width: 70px;
+        border-radius: 50%;
+        position: relative;
+        top: 34px;
+        left: 297px;
+        z-index: -1;
+        animation: shrink 1s linear 1;
+        overflow: hidden;
+    }
+    @keyframes shrink {
+        50%{
+            transform: scaleX(0.5);
+        }
+    }
+    #img1{
+        height: 50px;
+        width: 50px;
+        float: left;
+    }
+</style>
+
+<body>
+    <img id="img1" src="gif.gif" alt="" srcset="">
+    <!-- <h1>Let's change the World and do someting different to be different!!!</h1> -->
+    <img id="img" src="health.webp" alt="" srcset="">
+    <div class="shadow"></div>
+    <h1>Let's change the World!</h1>
+    
+    <h2>Move further by clickig GO AHEAD! </h2>
+    <p>We hope you will love our service.</p>
+    <a href="index.html">
+        <button class="btn">Go AHEAD</button>
+    </a>
+</body>
+
+</html>

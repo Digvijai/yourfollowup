@@ -1,0 +1,172 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: 'Baloo Bhai 2', cursive;
+	background-image: url('anurag.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: slider 25s infinite linear;
+}
+@keyframes slider{
+	0%{
+		background-image: url('anurag.jpg');
+	}
+	25%{
+		background-image: url('prashant.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	50%{
+		background-image: url('mee.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	75%{
+		background-image: url('artafi.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	100%{
+		background-image: url('alokita.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+#h1{
+	margin-left: 43%;
+	margin-top: 0px;
+}
+#image{
+	background-image: url('prashant.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%,100%;
+	height: 40%;
+    width: 30%; 
+	position: absolute;
+	left: 49%;
+	top: 27%;
+	border: 6px dotted black;
+	border-radius: 30%;
+	background-clip: content-box;
+	transform: translate(-50%,-50%);
+}
+#art{
+	background-image: url('artafi.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%,100%;
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	border: 2px dashed black;
+	transform: translate(-50%,-50%);
+}
+#hari{
+	background-image: url('hariom.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%,100%;
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	left: 50%;
+	top: 111%;
+	border: 2px dashed black;
+	/* border-radius: 30%; */
+	transform: translate(-50%,-50%);
+}
+#mia{
+	background-image: url('alokita.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%,100%;
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	left: 50%;
+	top: 132%;
+	border: 2px dashed black;
+	/* border-radius: 30%; */
+	transform: translate(-50%,-50%);
+}
+#adak{
+	background-image: url('adak.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%,100%;
+	height: 45%;
+	width: 20%;
+	position: absolute;
+	left: 50%;
+	top: 166%;
+	bottom: 20px;
+	border: 2px dashed black;
+	/* border-radius: 30%; */
+	transform: translate(-50%,-50%);
+}
+#bhaia{
+	background-image: url('mee.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%,100%;
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	left: 50%;
+	top: 69%;
+	bottom: 20px;
+	border: 2px dashed black;
+	/* border-radius: 30%; */
+	transform: translate(-50%,-50%);
+}
+/* utility ids */
+#para{
+	margin-left: 62%;
+	margin-top:18%;
+	display: flex;
+	color: white;
+	/* flex-direction: column; */
+	/* border: 2px solid black; */
+	/* display: inline; */
+}
+#para1{
+	margin-left: 62%;
+	margin-top:6%;
+	display: flex;
+	color: white;
+	/* flex-direction: column; */
+	/* border: 2px solid black; */
+	/* display: inline; */
+}
+#para2{
+	margin-left: 62%;
+	margin-top:9%;
+	display: flex;
+	color: white;
+	flex-direction: column;
+	/* border: 2px solid black; */
+	/* display: inline/; */
+}
+#para3{
+	margin-left: 62%;
+	margin-top:6%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	/* border: 2px solid black; */
+	/* display: inline; */
+}
+#para4{
+	margin-left: 62%;
+	margin-top:8%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	/* border: 2px solid black; */
+	/* display: inline; */
+}
+#para5{
+	margin-left: 67%;
+	margin-top:6%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	/* border: 2px solid black; */
+}

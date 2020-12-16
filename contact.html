@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" width="device-width" content="IE=edge">
+	<title>contact us</title>
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" media="screen and (max-width:1030px)" href="media2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Fill the form below for contacting us.</h1>
+	<form action="noaction.php" onsubmit="return myfun()" id="form" class="bg-light" autocomplete="off">
+		<div>
+			<label>Name:</label><br><input type="text" placeholder="Enter your name" name="" id="yname">
+			<span id="uname" class="text-danger"></span><br>
+		</div>
+		<div>
+			<label>Email Id:</label><br> <input type="text" placeholder="Enter your Email" name="" id="yid">
+			<span id="uid" class="text-danger"></span><br>
+		</div>
+		<div>
+			<label>Phone No.:</label> <br><input type="text" placeholder="Enter your phone no." name="" id="yno">
+			<span id="uno" class="text-danger"></span><br>
+		</div>
+		<div>
+			<label>Address:</label><br> <input type="text" placeholder="Enter your Cuurrent address" name="" id="yadd">
+			<span id="uadd" class="text-danger"></span><br>
+		</div>
+		<div>
+			<button type="submit" id="btn">Submit form</button>
+		</div>
+	</form>
+
+</body>
+<script src="contact.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</html>

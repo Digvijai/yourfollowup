@@ -1,0 +1,224 @@
+/* css starts from here */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Navigation section starts from here */
+#navbar{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+#navbar::before{
+	content: "";
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	opacity: 0.4;
+}
+#navbar img{
+	height: 4%;
+	width: 4%;
+	border-radius: 50%;
+}
+
+#navbar ul{
+	float: right;
+	display: flex;
+	list-style: none;
+	padding-left: 24px;
+}
+#navbar ul li a{
+	padding: 6px;
+	float: left;
+	text-decoration: none;
+	color: white;
+}
+#navbar ul li a:hover{
+	color: black;
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+/* home Section part CSS */
+#home{
+	font-family: 'Baloo Bhai 2', cursive;
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	align-items: center;
+	justify-content: center;
+	height: 350px;
+}
+#home::before{
+	content: "";
+	background-image: url('anurag1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -2;
+    opacity: 0.89;
+}
+
+/* Inferior CSS */
+#h-primry{
+	color:black;
+	font-size: 2.3rem;
+	margin-top: 218px;
+}
+#home p{
+	font-size: 1rem;
+	color: black;
+}
+.btn{
+	width: 119px;
+	border: 2px solid black;
+    border-radius: 8px;
+    font-size: 17px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+.btn:hover{
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+}
+/* home 1 section part CSS */
+#home1{
+align-items: center;
+justify-content: center;
+}
+#home1::before{
+	content: "";
+	background-image: url('fit.jpg');
+	z-index: -1;
+	opacity: 0.4;
+}
+#h-secondry{
+	text-align: center;
+	display: block;	 
+    /* padding-left: 392px;	 */
+    margin-top: 133px;
+}
+.boxes{
+	text-align: center;
+	display: flex;
+	padding-left: 380px;
+    margin-left: -373px;
+    margin-top: 0px;
+}
+#box1{
+ 	border: 7px dotted black;
+ 	border-radius: 10px;
+ 	margin: 5px;
+ 	padding: 4px;
+ 	font-size: 20px;
+ 	/* background-image: url('coach.jpg'); */
+}
+#box2{
+	border: 7px dotted black;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 4px;
+	font-size: 20px;
+/*  	background-image: url('coach1.jpg');
+ */}
+#box3{
+	border: 7px dotted black;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 4px;
+	font-size: 20px;
+/*  	background-image: url('coach2.jpg');
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ */}
+ #h2{
+ 	display: block;
+ 	text-align: center;
+}
+/* Follow up section */
+#h-teritiary{
+	text-align: center; 
+}
+/* form section */
+#home2 form{
+	/* align-items: center; */
+	text-align: center;
+	margin-top: 34px;
+	color: white;
+	font-size: 40px; 
+	/* position: relative;	 */
+}
+#home2 form input{
+	border: 2px dotted black;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+}
+#home2{
+background-color:lightcoral;  
+ }
+#home2::before{
+	content: "";
+/* background-color:black; */
+	/* background-image: url('anurag.jpg'); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -2;
+    opacity: 0.89;	
+}
+.btn2{
+	margin-top: 5px;
+	border-radius: 4px;
+	border: 2px solid black;
+	padding: 3px;
+	cursor: pointer;
+}
+.btn2:hover{
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+}
+.text-danger{
+	color: red;
+	font-weight: bold;
+}
+#span{
+	font-size: 26px;
+}
+#energy{
+	font-size: 26px;
+
+}
+#hunger{
+	font-size: 26px;
+}
+#change{
+	font-size: 26px;
+}
+#transfer{
+	font-size: 26px;
+}
+#enjoy{
+	font-size: 26px;
+}
+#home2 img{
+	/* height: 30%; */
+	width: 7%;
+	border-radius: 50%;
+}

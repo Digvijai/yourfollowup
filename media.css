@@ -1,0 +1,60 @@
+/* navigation bar */
+#navbar{
+	flex-direction: column;
+}
+#navbar ul li a{
+	font-size: 24px; 
+	padding: 9px;
+}
+/* home section */
+#home{
+	height: 812px;
+}
+#home p{
+	font-size: 18px;
+}
+#home h1{
+	font-size: 62px;
+    text-align: center;
+}
+#home1{
+    height: 1312px;
+    padding-top: 496px;
+}
+#form{
+	height: 1583px;
+	/* width: 50%; */
+	padding-top: 400px;
+	/* border: 2px solid black; */
+}
+#form input{
+	border: 2px dashed black;
+	border-radius: 20px;
+	height: 39px;
+	font-weight: bold;
+}
+/* utility classes */
+.boxes{
+	text-align: center;
+	flex-direction: column;
+}
+#h-secondry{
+	align-items: center;
+	font-size: 2.3rem;
+}
+.btn2{
+	width: 23%;
+	height: 4%;
+	font-size: 86%;
+	border: 2px solid black;
+    border-radius: 11px;
+}
+#home2 img{
+	width: 15%;
+}
+#h-teritiary{
+	font-size: 4.3rem;
+}
+#form [type="radio"]{
+	width: 4%
+}

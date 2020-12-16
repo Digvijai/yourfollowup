@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" media="screen and (max-width:1030px)" href="media.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<!-- <script src="index.js"></script> -->
+
+</head>
+
+<!-- <h1>hello mom</h1> -->
+
+<body>
+	<nav id="navbar">
+		<img src="fitclub.jpg" alt="">
+		<ul>
+			<li class="active">
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About us</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact us</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section id="home">
+
+		<h1 id="h-primry">Welcome to MyFitFamilyClub</h1>
+		<p>This is our FitFamilyClub, and we are very excited for starting this online.</p>
+		<p>Join our all session of exrcise three days a week.</p>
+		<a href="book.html">
+			<button class="btn">Book Session</button>
+		</a>
+	</section>
+	<section id="home1">
+		<h1 id="h-secondry">Our Services</h1>
+		<hr>
+		<hr>
+		<div class="boxes">
+			<div id="box1">
+				<img src="pt.jpg" alt="">
+				<h2 id="h2">Our Club</h2>
+				<p>Our Club is One of the best club in the world. <br>We all are upset due to this pandemic. But we have
+					introduced a virtual way of fitness.</p>
+			</div>
+			<div id="box2">
+				<img src="hc.jpg" alt="">
+				<h2 id="h2">Our Training</h2>
+				<p>Our Coaches gives training Three Days a Week. <br>They are dedicated against their works. So cooprate
+					with our coaches and do exercise with full Enthusism. </p>
+			</div>
+			<div id="box3">
+				<img src="24herb.jpg" alt="">
+				<h2 id="h2">Become 24Fit</h2>
+				<p>We will try our best to give you best service.Book the exercise session by clicking the above Button.
+					THANK YOU!</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="home2">
+		<img src="atulyadevsingh.jpg" alt="">
+		<h2 id="h-teritiary">Follow Up Here</h2>
+		<form action="" onsubmit="sendData()"  id="form" class="bg-light" method="POST">
+
+		<div>
+				Name: <label><input type="text" placeholder="Enter Your Name" id="name"
+						autocomplete="off"></label><br>
+				<span id="username" class="text-danger"> </span>
+			</div><br>
+
+			<div>
+				<span id="enjoy">Did you Enjoyed this Shake?</span> Yes: <input type="radio" 
+					value="yes" name="enjoyment"> </input> No: <input type="radio" value="no" name="enjoyment"> </input>
+				<span id="radio" class="text-danger"> </span>
+			</div><br>
+			<div>
+				<span id="span">How many time you had Afresh?</span> 2 Times: <input type="radio"
+					value="2" name="affresh"> </input> 3 Times: <input type="radio" value="3" name="affresh"> </input> 5
+				times: <input type="radio" value="5" name="affresh"> </input>
+			</div><br>
+			<div>
+				<span id="energy">How is your energy today?</span>High: <input type="radio"
+					 value="high" name="energy"></input> medium: <input type="radio" value="medium" name="energy"></input> Low: <input 
+					type="radio" value="low" name="energy"> </input>
+			 </div><br> 
+			<div>
+				<span id="hunger">How is your hunger? </span> Controlled: <input type="radio"
+					value="controlled" name="hunger"> </input> Uncontrolled: <input type="radio" value="uncontrolled" name="hunger">
+				</input> </div><br>
+			<div>
+				<span id="change">Did you noticed any change in your body? </span> Yes: <input type="radio"
+					 value="yes" name="change"> </input> No: <input type="radio" value="no" name="change"> </input>
+			</div><br>
+			<div>
+				<span id="transfer">How is this transformation?</span> Good: <input type="radio"
+					value="good" name="transformation"> </input> Very good <input type="radio" value="very good" name="transformation"> </input>
+				Fabulous: <input type="radio" value="fabulous" name="transformation"> </input>
+			</div><br>
+			<button type="button" class="btn2" name="save" onclick="sendData()">Submit</button>
+		</form>
+		<!-- <button onclick="color()">Dark/white</button> -->
+	</section>
+<script>
+		function sendData(){
+			const formData={'name':document.getElementById("name").value,'enjoy':document.querySelector('input[name = "enjoyment"]:checked').value,'affresh':document.querySelector('input[name = "affresh"]:checked').value,"energy":document.querySelector('input[name = "energy"]:checked').value,
+			'hunger':document.querySelector('input[name = "hunger"]:checked').value,'change':document.querySelector('input[name = "change"]:checked').value,'transformation':document.querySelector('input[name = "transformation"]:checked').value}			
+			axios.post('https://still-ocean-40230.herokuapp.com/saveform',JSON.stringify(formData))
+		}
+</script>
+</body>
+<script src="index.js" type="text/javascript" charset="utf-8" async defer></script>
+
+
+</html>

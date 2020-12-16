@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>form</title>
+  <link rel="stylesheet" href="book.css">
+  <link rel="stylesheet" media="screen and (max-width:1030px)" href="media3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <form action="noaction.php" onsubmit="return myfunction()" autocomplete="off" id="form" class="bg-light">
+    <div>
+      <label>Name:</label><br><input type="text" placeholder="Enter your name" name="" id="name">
+      <span id="yname" class="text-danger"></span><br>
+    </div>
+    <div>
+      <label>Email Id:</label><br> <input type="text" placeholder="Enter your Email" name="" id="id">
+      <span id="yid" class="text-danger"></span><br>
+    </div>
+    <div>
+      <label>Phone No.:</label> <br><input type="text" placeholder="Enter your phone no." name="" id="no">
+      <span id="yno" class="text-danger"></span><br>
+    </div>
+    <div>
+      <label>Address:</label><br> <input type="text" placeholder="Enter your Cuurrent address" name="" id="add">
+      <span id="yadd" class="text-danger"></span><br>
+    </div>
+    <div>
+      <button type="submit" id="btn">Submit form</button>
+    </div>
+  </form>
+</body>
+<script src="book.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</html>
